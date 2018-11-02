@@ -1,0 +1,5 @@
+useDynLib(HellCor, .registration = TRUE)
+import(energy)
+importFrom(stats, runif)
+importFrom("stats", "rnorm")
+export(HellCor, .datagenW.corrected, .datagenDiamond, .datagenParabola.corrected, .datagen2Parabolas.corrected, .datagenCircle.corrected, .datagen4indclouds, .datagenCubic, .datagenSine, .datagenWedge, .datagenCross, .datagenSpiral, .datagen4Circles, .datagenHeavysine, .datagenDoppler, .datagen5Clouds)
