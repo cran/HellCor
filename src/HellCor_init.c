@@ -6,7 +6,9 @@
 */
 
 /* .C calls */
-extern void hellcorC(void *, void *, void *, void *, void *, void *, void *, void *);
+extern void hellcorC(double *x, int *xlen, double *statistic, int *pvalcomp,
+		     double *pvalue, int *KLmaxvalue, double *alphavalue);
+
 
 static const R_CMethodDef CEntries[] = {
     {"hellcorC", (DL_FUNC) &hellcorC, 8},

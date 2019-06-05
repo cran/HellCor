@@ -3,3 +3,10 @@
 
 Version 1.0 : First released version submitted to CRAN.
 
+2019-06-05
+----------
+
+Version 1.1 :
+
+- Modified file HellCor_init.c to correct the declaration of hellcorC
+- Corrected line 114 in file HellCor.Rd (n < -500)

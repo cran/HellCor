@@ -1,8 +1,8 @@
 Package: HellCor
 Type: Package
 Title: The Hellinger Correlation
-Version: 1.0.1
-Date: 2018-10-31
+Version: 1.1
+Date: 2019-06-05
 Author: Gery Geenens [aut],
   Pierre Lafaye De Micheaux [aut, cre]
 Authors@R: c(person("Gery", "Geenens", role = c("aut"),
@@ -17,7 +17,7 @@ License: GPL (>= 2)
 LazyLoad: yes
 Depends: R (>= 2.10.0), energy
 Imports: stats
-Packaged: 2018-10-30 22:35:34 UTC; lafaye
 NeedsCompilation: yes
+Packaged: 2019-06-05 00:23:07 UTC; lafaye
 Repository: CRAN
-Date/Publication: 2018-11-02 19:00:13 UTC
+Date/Publication: 2019-06-05 12:00:16 UTC

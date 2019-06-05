@@ -111,7 +111,7 @@ t.test(Chagos$kg_N_ha_yr ~ Chagos$Treatment)
 ######################################################################
 # Figure 2
 
-n < -500
+n <- 500
 
 set.seed(1)
 par(mfrow = c(3, 5))
