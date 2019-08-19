@@ -3,13 +3,13 @@ HellCor <- function(x, y, KLmax = 20L, alpha = 6.0, pvalue = FALSE) {
   if (!is.integer(KLmax)) stop("'KLmax' should be an integer.")
   if (length(x) != length(y)) stop("'x' and 'y' should have the same length.")
   
-  res <- .C("hellcorC", as.double(cbind(x, y)), as.integer(2 * length(x)), statistic = as.double(0.0), as.integer(pvalue), pvalue = as.double(0.0), as.integer(KLmax), as.double(alpha), package = "HellCor")
+  res <- .C("hellcorC", as.double(cbind(x, y)), as.integer(2 * length(x)), statistic = as.double(0.0), as.integer(pvalue), pvalue = as.double(0.0), as.integer(KLmax), as.double(alpha), PACKAGE = "HellCor")
   
   if (pvalue) {
     n <- length(x)
     twon <- 2 * n
     y <- runif(n)
-    pval <- mean(replicate(10000, .C("hellcorC", as.double(cbind(runif(n), y)), as.integer(twon), statistic = as.double(0.0), as.integer(0), as.double(0.0), as.integer(2), as.double(alpha), package = "HellCor")$statistic) > res$statistic)
+    pval <- mean(replicate(10000, .C("hellcorC", as.double(cbind(runif(n), y)), as.integer(twon), statistic = as.double(0.0), as.integer(0), as.double(0.0), as.integer(2), as.double(alpha), PACKAGE = "HellCor")$statistic) > res$statistic)
   } else {pval <- NA}
   
   return(list(Hcor = res$statistic, pvalue = pval))

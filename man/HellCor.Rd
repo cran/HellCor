@@ -5,9 +5,9 @@
 The Hellinger Correlation
 }
 \description{
-Empirical value of the Hellinger correlation, which is a new measure of dependence between
-two continuous random variables that satisfies a set of 7 axioms that
-any valid measure of dependence should satisy.}
+Empirical value of the Hellinger correlation, a measure of dependence between
+two continuous random variables that satisfies a set of 7 desirable
+axioms (existence, symmetry, normalisation, characterisation of independence, weak Gaussian conformity, characterisation of pure dependence, generalised Data Processing Inequality).}
 \usage{
 HellCor(x, y, KLmax = 20L, alpha = 6.0, pvalue = FALSE)
 }

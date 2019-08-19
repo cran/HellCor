@@ -10,3 +10,11 @@ Version 1.1 :
 
 - Modified file HellCor_init.c to correct the declaration of hellcorC
 - Corrected line 114 in file HellCor.Rd (n < -500)
+
+2019-08-12
+----------
+
+Version 1.2 :
+
+- Modified package = into PACKAGE = in file HellCor.R
+- Modified the two man files

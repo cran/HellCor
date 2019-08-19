@@ -11,7 +11,7 @@ extern void hellcorC(double *x, int *xlen, double *statistic, int *pvalcomp,
 
 
 static const R_CMethodDef CEntries[] = {
-    {"hellcorC", (DL_FUNC) &hellcorC, 8},
+    {"hellcorC", (DL_FUNC) &hellcorC, 7},
     {NULL, NULL, 0}
 };
 
