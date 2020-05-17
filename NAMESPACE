@@ -1,5 +1,15 @@
 useDynLib(HellCor, .registration = TRUE)
 import(energy)
-importFrom(stats, runif)
+importFrom("stats", "runif")
 importFrom("stats", "rnorm")
-export(HellCor, .datagenW.corrected, .datagenDiamond, .datagenParabola.corrected, .datagen2Parabolas.corrected, .datagenCircle.corrected, .datagen4indclouds, .datagenCubic, .datagenSine, .datagenWedge, .datagenCross, .datagenSpiral, .datagen4Circles, .datagenHeavysine, .datagenDoppler, .datagen5Clouds)
+importFrom("stats", "quantile", "rbeta", "sd")
+importFrom("stats", "dbeta", "dist", "qbeta")
+importFrom("stats", "qnorm", "var")
+importFrom("FNN", "get.knn")
+importFrom("orthopolynom", "legendre.polynomials")
+importFrom("graphics", "lines", "plot", "points")
+export(HellCor, .datagenW.corrected, .datagenDiamond, .datagenParabola.corrected, 
+       .datagen2Parabolas.corrected, .datagenCircle.corrected, .datagen4indclouds, 
+       .datagenCubic, .datagenSine, .datagenWedge, .datagenCross, .datagenSpiral, 
+       .datagen4Circles, .datagenHeavisine, .datagenDoppler, .datagen5Clouds, .datagenBex, 
+       .datagenHilbertPeano, .drawHilbertPeano, .gendep, .datagen15)

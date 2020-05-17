@@ -18,3 +18,15 @@ Version 1.2 :
 
 - Modified package = into PACKAGE = in file HellCor.R
 - Modified the two man files
+
+2020-03-10
+----------
+
+Version 1.3 :
+
+- Modified the way to compute the vaules of Khat and Lhat in file hellcor.cpp
+- I added the data file worlddemographics.RData and the man file worldemographics.Rd
+- I added the computation of the confidence interval in the function HellCor
+- I changed pvalue into pval.comp for the argument of the HellCor function
+- I changed pvalue into p.value for the output of the HellCor function
+- I changed the HellCor.Rd file accordingly
